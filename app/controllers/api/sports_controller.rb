@@ -1,7 +1,7 @@
 class Api::SportsController < ApplicationController
 
   def index
-    # @sports = 
+    @sports = Sport.all
     render "index.json.jb"
   end
   

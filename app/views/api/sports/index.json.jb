@@ -1,3 +1,8 @@
-{
-   message: "i love big sports"
-}
+@sports.map do |sport|
+  {
+  #  message: "i love big sports"
+    name: sport.name,
+    abbreviation: sport.abbreviation,
+    ball: sport.ball,
+  }
+end
