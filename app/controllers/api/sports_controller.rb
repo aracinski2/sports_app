@@ -6,6 +6,7 @@ class Api::SportsController < ApplicationController
   end
   def show
     @sport = Sport.find_by(id: params[:id])
+    render "show.json.jb"
   end
   
 end
