@@ -10,6 +10,7 @@ Rails.application.routes.draw do
     get "/sports" => "sports#index"
     get "/sports/:id" => "sports#show"
     post "/sports" => "sports#create"
+    patch "/sports/:id" => "sports#update"
     
   end
   

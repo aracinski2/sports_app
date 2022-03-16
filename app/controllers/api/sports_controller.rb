@@ -14,5 +14,14 @@ class Api::SportsController < ApplicationController
     @sport.save
     render "show.json.jb"
   end
+
+  def update
+    @sport = Sport.find_by(id: params[:id])
+    @sport.name = params[:name]
+    @sport.abbreviation = params[:abbreviation]
+    @sport.ball = params[:ball]
+    @sport.save
+    render "show.json.jb"
+  end
   
 end
