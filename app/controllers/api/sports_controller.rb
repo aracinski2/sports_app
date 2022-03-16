@@ -23,5 +23,11 @@ class Api::SportsController < ApplicationController
     @sport.save
     render "show.json.jb"
   end
+
+  def delete
+    @sport = Sport.find_by(id: params[:id])
+    @sport.delete
+    render json: {message: "sport deleted"}
+  end
   
 end
