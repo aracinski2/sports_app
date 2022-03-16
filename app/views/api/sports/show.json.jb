@@ -1,0 +1,5 @@
+{
+  name: @sport.name,
+  abbreviation: @sport.abbreviation,
+  ball: @sport.ball,
+}

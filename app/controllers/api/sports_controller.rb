@@ -4,5 +4,8 @@ class Api::SportsController < ApplicationController
     @sports = Sport.all
     render "index.json.jb"
   end
+  def show
+    @sport = Sport.find_by(id: params[:id])
+  end
   
 end
