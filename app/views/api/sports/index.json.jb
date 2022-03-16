@@ -1,6 +1,7 @@
 @sports.map do |sport|
   {
   #  message: "i love big sports"
+    id: sport.id,
     name: sport.name,
     abbreviation: sport.abbreviation,
     ball: sport.ball,
